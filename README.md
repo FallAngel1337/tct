@@ -10,6 +10,7 @@ Examples:
 | `cat` | `tct cat some_file` |
 | `grep` | `tct cat a_string some_file` |
 | `mkdir` | `tct mkdir new_dir` |
+| `man cat` | `tct man cat`|
 
 ## Benchmarks
 Comparision of some tools. Everything with `gnu` prefix means that's from `gnu-coreutils`'s Arch package (version `9.0-2`).
