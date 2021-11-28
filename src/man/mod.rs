@@ -17,37 +17,37 @@ lazy_static! {
         impl_man!(
             hmp,
             "cat",
-            "../man/cat",
+            "/opt/man/cat",
 
             "man",
-            "../man/man",
+            "/opt/man/man",
 
             "grep",
-            "../man/grep",
+            "/opt/man/grep",
 
             "can",
-            "../man/fs_handle/can",
+            "/opt/man/fs_handle/can",
 
             "cp",
-            "../man/fs_handle/cp",
+            "/opt/man/fs_handle/cp",
 
             "cpdir",
-            "../man/fs_handle/cpdir",
+            "/opt/man/fs_handle/cpdir",
 
             "ls",
-            "../man/fs_handle/ls",
+            "/opt/man/fs_handle/ls",
 
             "mkdir",
-            "../man/fs_handle/mkdir",
+            "/opt/man/fs_handle/mkdir",
 
             "rm",
-            "../man/fs_handle/rm",
+            "/opt/man/fs_handle/rm",
 
             "rmdir",
-            "../man/fs_handle/rmdir",
+            "/opt/man/fs_handle/rmdir",
 
             "touch",
-            "../man/fs_handle/touch"
+            "/opt/man/fs_handle/touch"
         );
         hmp
     };
