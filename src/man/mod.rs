@@ -18,7 +18,7 @@ lazy_static! {
             hmp,
             "cat",
             "man",
-            "grei",
+            "grep",
             "fs_handle/can",
             "fs_handle/cp",
             "fs_handle/cpdir",
