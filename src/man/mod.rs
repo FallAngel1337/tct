@@ -4,9 +4,9 @@ use rustc_hash::FxHashMap;
 type ManualMap = FxHashMap<&'static str, &'static str>;
 
 macro_rules! impl_man {
-    ($hmp:tt, $($cmd:tt), *) => {
+    ($hmp:tt, $($key:tt, $cmd:tt), *) => {
         $(
-            $hmp.insert($cmd, $cmd).unwrap();
+            $hmp.insert($key, $cmd);
         )*
     }
 }
@@ -17,16 +17,37 @@ lazy_static! {
         impl_man!(
             hmp,
             "cat",
+            "../man/cat",
+
             "man",
+            "../man/man",
+
             "grep",
-            "fs_handle/can",
-            "fs_handle/cp",
-            "fs_handle/cpdir",
-            "fs_handle/ls",
-            "fs_handle/mkdir",
-            "fs_handle/rm",
-            "fs_handle/rmdir",
-            "fs_handle/touch"
+            "../man/grep",
+
+            "can",
+            "../man/fs_handle/can",
+
+            "cp",
+            "../man/fs_handle/cp",
+
+            "cpdir",
+            "../man/fs_handle/cpdir",
+
+            "ls",
+            "../man/fs_handle/ls",
+
+            "mkdir",
+            "../man/fs_handle/mkdir",
+
+            "rm",
+            "../man/fs_handle/rm",
+
+            "rmdir",
+            "../man/fs_handle/rmdir",
+
+            "touch",
+            "../man/fs_handle/touch"
         );
         hmp
     };
