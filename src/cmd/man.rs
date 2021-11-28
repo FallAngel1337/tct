@@ -6,6 +6,7 @@ use std::{
         path::Path
 };
 
+// TODO: Create a uninstall funciotion
 pub fn install_manpages<T: AsRef<Path>, U: AsRef<Path>>(from: T, to: U) -> io::Result<()> {
     fs::create_dir_all(&to)?;
     

@@ -11,6 +11,8 @@ macro_rules! impl_man {
     }
 }
 
+// I know that `/opt/` was not made to hold the manpages.
+// But, since this is a toy toolchain, we can use it for now.
 lazy_static! {
     pub static ref MANUALS: ManualMap = {
         let mut hmp: ManualMap = ManualMap::default();

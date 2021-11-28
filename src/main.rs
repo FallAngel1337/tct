@@ -3,6 +3,7 @@ use std::error::Error;
 use tct::cmd::COMMANDS;
 use tct::cmd::man;
 
+// TODO: Improve the usage in general
 fn main() -> Result<(), Box<dyn Error>> {
     let args: Vec<String> = env::args().collect();
 
